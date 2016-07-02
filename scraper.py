@@ -8,7 +8,7 @@ from lxml import etree
 import urllib
 import io
 
-FTP_URL = 'results.aec.gov.au'
+FTP_URL = 'mediafeed.aec.gov.au/20499/Detailed/Verbose/'
 FTP_TIMEOUT = 30
 NS = {
 	'aec': 'http://www.aec.gov.au/xml/schema/mediafeed',
