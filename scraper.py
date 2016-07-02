@@ -8,7 +8,7 @@ from lxml import etree
 import urllib
 import io
 
-FTP_URL = 'mediafeed.aec.gov.au/20499/Detailed/Verbose/'
+FTP_URL = 'mediafeed.aec.gov.au'
 FTP_TIMEOUT = 30
 NS = {
 	'aec': 'http://www.aec.gov.au/xml/schema/mediafeed',
@@ -157,7 +157,7 @@ if __name__ == '__main__':
 	# Retrieve the data in each election's directory
 	for election_id in election_ids:
 		# go to the directory
-		path = '/{id}/Detailed/Verbose/'.format(id=election_id)
+		path = '/20499/Detailed/Verbose/'
 		ftp.cwd(path)
 		# Get the files ordered by time
 		files = ftp.nlst('-t')
